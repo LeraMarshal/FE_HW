@@ -7,8 +7,8 @@
 :root {
     --main-bg: #f0f1fc;
     --default-border-color: rgb(234, 232, 246);
-    --card-height: 300px;
-    --card-width: 500px;
+    --card-height: 225px;
+    --card-width: 380px;
 }
 
 body {
@@ -191,19 +191,20 @@ span.search__icon {
     justify-content: space-between;
     align-items: center;
 
-    height: 60px;
+    min-height: 40px;
 }
 
 .card__title {
     margin: 0;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 .card__action {
     color: gray;
+    font-size: 0.8em;
 }
 .card__action i {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .card__body {
@@ -223,7 +224,7 @@ span.search__icon {
 
 .card__amount {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .card__currency {
@@ -239,19 +240,20 @@ span.search__icon {
 
 .card__percent {
     color: red;
-    font-size: 2.2em;
-    margin: 0;
+    font-size: 1.7em;
+    margin: 0 0 10px 0;
 }
 
 .card__summary {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
+    margin: 0;
 }
 
 .card__primary-data {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .card__secondary-data {
@@ -260,7 +262,7 @@ span.search__icon {
 }
 
 .card__data h5 {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: gray;
     text-transform: uppercase;
     margin: 0 0 5px 0;
@@ -268,8 +270,9 @@ span.search__icon {
 
 .card__data h3 {
     margin: 0;
+    font-size: 1em;
 }
 
 .card__primary-data.card__data h3 {
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
