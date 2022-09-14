@@ -276,3 +276,34 @@ span.search__icon {
 .card__primary-data.card__data h3 {
     font-size: 1.3em;
 }
+.burger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        transform: translateX(-250px);
+        transition: all .5s ease-out;
+    }
+    .sidebar--open{
+        transform: none;
+    }
+    main{
+         margin: 0;
+     }
+    .burger{
+        position: fixed;
+        bottom: 5rem;
+        left: 0;
+        display: block;
+        font-size: 3rem;
+        background: white;
+        border: 1px solid;
+        padding: 0 1rem;
+        transition: all .5s ease-out;
+        font-family: monospace;
+    }
+    .burger--open{
+        left: 200px;
+    }
+}

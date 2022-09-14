@@ -9,11 +9,23 @@
         <link rel="stylesheet"
               href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="index.css" type="text/css">
+        <script>
+            function toggleSidebar() {
+                let burger = document.querySelector('.burger');
+                let sidebar = document.querySelector('.sidebar');
+
+                burger.classList.toggle('burger--open');
+                sidebar.classList.toggle('sidebar--open');
+            }
+        </script>
     </head>
     <body>
+        <div id="burger" class="burger" onclick="toggleSidebar()">
+            +
+        </div>
 
         <div class="wrapper">
-            <aside class="sidebar">
+            <aside class="sidebar" id="sidebar">
                 <div class="logo">Super Finti</div>
 
                 <nav class="menu">
