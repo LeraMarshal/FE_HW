@@ -7,8 +7,21 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="index.css" type="text/css">
+        <script>
+            function toggleNav() {
+                document.querySelector(".nav").classList.toggle("nav--open")
+                document.querySelector(".burger--nav").classList.toggle("burger--open")
+            }
+
+            function toggleAside() {
+                document.querySelector(".aside").classList.toggle("aside--open")
+                document.querySelector(".burger--aside").classList.toggle("burger--open")
+            }
+        </script>
     </head>
     <body>
+        <a class="burger burger--nav" href="#" onclick="toggleNav()">+</a>
+        <a class="burger burger--aside" href="#" onclick="toggleAside()">+</a>
         <nav class="nav">
             <div class="nav__top">
                 <img class="logo" src="https://via.placeholder.com/150x50/F9F9F9?text=Logo" alt="logo">
@@ -41,201 +54,143 @@
                     </div>
                 </header>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                <section class="main__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam
+                        asperiores
+                        commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
+                        praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
+                        consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
+                        quisquam rem!</p>
+                </section>
             </main>
             <aside class="aside">
                 <section class="schedules">
                     <h2 class="subtitle">
                         Schedule
                     </h2>
-                    <ul class="calendar">
-                        <li class="calendar__item calendar__item--small">Mon</li>
-                        <li class="calendar__item calendar__item--small">Tue</li>
-                        <li class="calendar__item calendar__item--small">Wed</li>
-                        <li class="calendar__item calendar__item--small">Thu</li>
-                        <li class="calendar__item calendar__item--small">Fri</li>
-                        <li class="calendar__item calendar__item--small">Sat</li>
-                        <li class="calendar__item calendar__item--small">Sun</li>
+                    <div class="schedules__wrapper">
+                        <ul class="calendar">
+                            <li class="calendar__item calendar__item--small">Mon</li>
+                            <li class="calendar__item calendar__item--small">Tue</li>
+                            <li class="calendar__item calendar__item--small">Wed</li>
+                            <li class="calendar__item calendar__item--small">Thu</li>
+                            <li class="calendar__item calendar__item--small">Fri</li>
+                            <li class="calendar__item calendar__item--small">Sat</li>
+                            <li class="calendar__item calendar__item--small">Sun</li>
 
-                        <li class="calendar__item calendar__item--grey">00</li>
-                        <li class="calendar__item calendar__item--grey">00</li>
-                        <li class="calendar__item calendar__item--grey">00</li>
-                        <li class="calendar__item calendar__item--grey">00</li>
-                        <li class="calendar__item calendar__item--grey">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item calendar__item--active">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
-                        <li class="calendar__item">00</li>
+                            <li class="calendar__item calendar__item--grey">27</li>
+                            <li class="calendar__item calendar__item--grey">28</li>
+                            <li class="calendar__item calendar__item--grey">29</li>
+                            <li class="calendar__item calendar__item--grey">30</li>
+                            <li class="calendar__item calendar__item--grey">31</li>
+                            <li class="calendar__item">01</li>
 
-                    </ul>
+                            <li class="calendar__item">02</li>
+                            <li class="calendar__item calendar__item--active">03</li>
+                            <li class="calendar__item">04</li>
+                            <li class="calendar__item">05</li>
+                            <li class="calendar__item">06</li>
+                            <li class="calendar__item">07</li>
+
+                            <li class="calendar__item">08</li>
+                            <li class="calendar__item">09</li>
+                            <li class="calendar__item">10</li>
+                            <li class="calendar__item">11</li>
+                            <li class="calendar__item">12</li>
+                            <li class="calendar__item">13</li>
+                            <li class="calendar__item">14</li>
+
+                            <li class="calendar__item">15</li>
+                            <li class="calendar__item">16</li>
+                            <li class="calendar__item">17</li>
+                            <li class="calendar__item">18</li>
+                            <li class="calendar__item">19</li>
+                            <li class="calendar__item">20</li>
+                            <li class="calendar__item">21</li>
+
+                            <li class="calendar__item">22</li>
+                            <li class="calendar__item">23</li>
+                            <li class="calendar__item">24</li>
+                            <li class="calendar__item">25</li>
+                            <li class="calendar__item">26</li>
+                            <li class="calendar__item">27</li>
+                            <li class="calendar__item">28</li>
+
+                            <li class="calendar__item">29</li>
+                            <li class="calendar__item">30</li>
+                        </ul>
+                    </div>
                 </section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, animi, aperiam asperiores
-                    commodi dolorem earum, facilis id illum iure laudantium libero necessitatibus odit pariatur
-                    praesentium qui quibusdam quis quod quos repellat suscipit tempora temporibus. Accusamus
-                    consequuntur cupiditate illum iusto labore mollitia natus, nemo nobis, nulla perspiciatis quasi
-                    quisquam rem!</p>
+                <section class="upcoming">
+                    <h2 class="subtitle">
+                        Upcoming
+                    </h2>
+                    <section class="timetable">
+                        <div class="timetable__hours">
+                            <div class="timetable__hour">09:00</div>
+                            <div class="timetable__hour">10:00</div>
+                            <div class="timetable__hour">11:00</div>
+                            <div class="timetable__hour">12:00</div>
+                            <div class="timetable__hour">13:00</div>
+                            <div class="timetable__hour">14:00</div>
+                            <div class="timetable__hour">15:00</div>
+                            <div class="timetable__hour">16:00</div>
+                            <div class="timetable__hour">17:00</div>
+                        </div>
+                        <div class="timetable__activities">
+                            <div class="timetable__activity timetable__activity--start-0900 timetable__activity--filler"></div>
+                            <div class="timetable__activity timetable__activity--start-1000 timetable__activity--duration-30">
+                                User interface design
+                            </div>
+                            <div class="timetable__activity timetable__activity--start-1100 timetable__activity--filler"></div>
+                            <div class="timetable__activity timetable__activity--start-1200 timetable__activity--filler"></div>
+                            <div class="timetable__activity timetable__activity--start-1300 timetable__activity--duration-30">
+                                Programming in Java
+                            </div>
+                            <div class="timetable__activity timetable__activity--start-1400 timetable__activity--filler"></div>
+                            <div class="timetable__activity timetable__activity--start-1500 timetable__activity--filler"></div>
+                            <div class="timetable__activity timetable__activity--start-1600 timetable__activity--duration-30">
+                                The Strategy of Marketing
+                            </div>
+                            <div class="timetable__activity timetable__activity--start-1700 timetable__activity--filler"></div>
+                        </div>
+                    </section>
+                </section>
             </aside>
         </div>
     </body>

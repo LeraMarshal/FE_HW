@@ -82,8 +82,13 @@ body {
 }
 
 .main {
-    width: 60%;
-    overflow: scroll;
+    overflow: auto;
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+
+.main__content {
+    padding: 15px;
 }
 
 .header {
@@ -137,26 +142,37 @@ body {
     width: 30px;
     border: none;
     outline: none;
-    background: black;
+    background: #363636;
 }
 
 .aside {
-    width: 40%;
+    min-width: 300px;
+    width: 300px;
     border-left: rgb(249, 249, 249) 2px solid;
-    overflow: scroll;
+    overflow: auto;
+
+    padding: 15px;
 }
-.schedules{
+
+.schedules__wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .calendar {
     padding: 0;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
 }
-.calendar__item{
+
+.calendar__item:hover:not(.calendar__item--small) {
+    background: rgba(232, 232, 232, 0.46);
+    cursor: pointer;
+}
+
+.calendar__item {
     list-style-type: none;
     width: calc(100% / 7);
     /*text-align: center;*/
@@ -165,14 +181,188 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-.calendar__item--small{
+
+.calendar__item--small {
     font-size: .75rem;
 }
-.calendar__item--grey{
+
+.calendar__item--grey {
     color: lightgray;
 }
-.calendar__item--active{
-    background: #1f1f1f;
+
+.calendar__item--active {
+    background: #363636;
     color: white;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.timetable {
+    display: flex;
+    height: 450px;
+}
+
+.timetable__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.timetable__hour {
+    width: 60px;
+    font-size: 0.9em;
+    color: gray;
+    line-height: calc(450px / 9);
+}
+
+.timetable__activities {
+    position: relative;
+    width: 100%;
+}
+
+.timetable__activity {
+    position: absolute;
+    font-size: 0.8em;
+    background: lightgray;
+    padding: 5px;
+    left: 0;
+    right: 0;
+}
+
+.timetable__activity--filler {
+    padding: 0;
+    height: 1px;
+}
+
+.timetable__activity--start-0900 {
+    top: calc(450px / 9 * 0.5);
+}
+
+.timetable__activity--start-1000 {
+    top: calc(450px / 9 * 1.5);
+}
+
+.timetable__activity--start-1100 {
+    top: calc(450px / 9 * 2.5);
+}
+
+.timetable__activity--start-1200 {
+    top: calc(450px / 9 * 3.5);
+}
+
+.timetable__activity--start-1300 {
+    top: calc(450px / 9 * 4.5);
+}
+
+.timetable__activity--start-1400 {
+    top: calc(450px / 9 * 5.5);
+}
+
+.timetable__activity--start-1500 {
+    top: calc(450px / 9 * 6.5);
+}
+
+.timetable__activity--start-1600 {
+    top: calc(450px / 9 * 7.5);
+}
+
+.timetable__activity--start-1700 {
+    top: calc(450px / 9 * 8.5);
+}
+
+.timetable__activity--duration-30 {
+    height: calc(450px / 9 / 2);
+}
+
+.burger{
+    width: 30px;
+    height: 30px;
+
+    border: gray 1px solid;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+    text-decoration: none;
+
+    z-index: 100;
+
+    position: fixed;
+    top: 0;
+
+    transition: all .5s ease-out;
+}
+
+.burger--nav {
+    left: 0;
+}
+
+.burger--nav.burger--open {
+    left: 200px;
+}
+
+.burger--aside {
+    right: 0;
+}
+
+.burger--aside.burger--open {
+    right: 300px;
+}
+
+@media screen and (max-width: 1070px) {
+    .nav {
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .wrapper {
+        top: 0;
+        left: 200px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .aside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -300px;
+        background: white;
+
+        transition: all .5s ease-out;
+    }
+
+    .aside--open {
+        right: 0;
+    }
+
+    .burger--aside {
+        display: flex;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    .nav {
+        left: -200px;
+        transition: all .5s ease-out;
+    }
+
+    .nav--open {
+        left: 0;
+    }
+
+    .wrapper {
+        left: 0;
+    }
+
+    .burger--nav {
+        display: flex;
+    }
 }
