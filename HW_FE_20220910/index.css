@@ -146,18 +146,18 @@ span.search__icon {
 }
 
 .cards {
+    position: relative;
+    padding-top: calc(var(--card-height) * 0.25);
     height: var(--card-height);
     background: var(--main-bg);
     border-bottom: var(--default-border-color) 1px solid;
     margin-bottom: calc(var(--card-height) * 0.5);
-
-    position: relative;
 }
 
 .cards__wrapper {
     position: absolute;
-    width: 100%;
     top: calc(var(--card-height) * 0.25);
+    width: 100%;
 
     display: flex;
     justify-content: space-around;
@@ -305,5 +305,18 @@ span.search__icon {
     }
     .burger--open{
         left: 200px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .cards {
+        height: auto;
+        background: unset;
+    }
+    .cards__wrapper {
+        position: unset;
+
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
