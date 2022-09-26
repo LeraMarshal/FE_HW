@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+            * {
+                box-sizing: border-box;
+            }
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                background: gray;
+            }
+
+            .aside-nav {
+                position: fixed;;
+                top: 50px;
+                bottom: 50px;
+                left: 50px;
+                width: 200px;
+
+                background: lightgray;
+
+                border-radius: 30px 0 0 30px;
+            }
+
+            .aside-inbox {
+                position: fixed;
+                top: 50px;
+                bottom: 50px;
+                left: 250px;
+                width: 300px;
+
+                background: white;
+                border-right: lightgray 1px solid;
+            }
+
+            .main {
+                position: fixed;
+                top: 50px;
+                bottom: 50px;
+                left: 550px;
+                right: 100px;
+
+                background: white;
+                border-right: lightgray 1px solid;
+            }
+
+            .header {
+                height: 100px;
+                border-bottom: lightgray 1px solid;
+            }
+
+            .aside-toolbar {
+                position: fixed;
+                top: 50px;
+                bottom: 50px;
+                right: 50px;
+                width: 50px;
+
+                background: white;
+
+                border-radius: 0 30px 30px 0;
+            }
+
+            @media screen and (max-width: 1200px) {
+                .aside-nav {
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 200px;
+
+                    border-radius: 0;
+                }
+
+                .aside-inbox {
+                    top: 0;
+                    bottom: 0;
+                    left: 200px;
+                    width: 300px;
+                }
+
+                .main {
+                    top: 0;
+                    bottom: 0;
+                    left: 500px;
+                    right: 50px;
+                }
+
+                .aside-toolbar {
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 50px;
+
+                    border-radius: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <aside class="aside-nav"></aside>
+        <aside class="aside-inbox"></aside>
+        <main class="main">
+            <header class="header"></header>
+        </main>
+        <aside class="aside-toolbar"></aside>
+    </body>
+</html>
