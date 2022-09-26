@@ -19,3 +19,5 @@
 [HW_FE_20220914](https://leramarshal.github.io/FE_HW/HW_FE_20220914)
 
 [HW_FE_20220920](https://leramarshal.github.io/FE_HW/HW_FE_20220920)
+
+[HW_FE_20220926_1](https://leramarshal.github.io/FE_HW/HW_FE_20220926_1)
